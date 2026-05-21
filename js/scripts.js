@@ -1,11 +1,11 @@
-/*!
-* Start Bootstrap - Creative v7.0.7 (https://startbootstrap.com/theme/creative)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
-*/
+/*
+ * IBYOS Design & Architecture — Custom scripts
+ * Cinematic interactions and lightweight scroll behaviors
+ * Author: IBYOS Design & Architecture
+ */
 //
-// Scripts
-// 
+// Custom scripts
+//
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -70,5 +70,50 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+    
+        // Cinematic reveal on scroll (IntersectionObserver)
+        if (window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal-visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+        
+            document.querySelectorAll('.reveal, .portfolio-card, .portfolio-highlight, .service-card, .feature-card').forEach(el => {
+                revealObserver.observe(el);
+            });
+        } else {
+            // Respect reduced motion: show elements immediately
+            document.querySelectorAll('.reveal, .portfolio-card, .portfolio-highlight, .service-card, .feature-card').forEach(el => {
+                el.classList.add('reveal-visible');
+            });
+        }
+    
+        // Lightweight parallax for image elements with data-parallax
+        const parallaxEls = Array.from(document.querySelectorAll('[data-parallax]'));
+        if (parallaxEls.length && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+            let ticking = false;
+            const onScroll = () => {
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        const centerY = window.innerHeight / 2;
+                        parallaxEls.forEach(el => {
+                            const rect = el.getBoundingClientRect();
+                            const distance = (rect.top + rect.height / 2) - centerY;
+                            const max = 80; // px
+                            const y = Math.max(-max, Math.min(max, -distance * 0.06));
+                            el.style.transform = `translate3d(0, ${y}px, 0)`;
+                        });
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            };
+            document.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+        }
 
 });

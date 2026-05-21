@@ -7,11 +7,11 @@ files = {
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="IBYOS Design & Architecture is a Batam architecture studio creating luxury residential, commercial and interior design for Batam, Jakarta and Singapore." />
+        <meta name="description" content="IBYOS Design & Architecture is a Batam architecture studio creating luxury residential, commercial and interior design for Batam and Jakarta." />
         <meta name="author" content="IBYOS Design & Architecture" />
         <title>IBYOS Design & Architecture | Batam Architecture Studio</title>
         <meta property="og:title" content="IBYOS Design & Architecture | Batam Architecture Studio" />
-        <meta property="og:description" content="A premium architecture studio in Batam delivering residential architecture, commercial design and bespoke interiors for Indonesia and Singapore." />
+        <meta property="og:description" content="A premium architecture studio in Batam delivering residential architecture, commercial design and bespoke interiors for Indonesia." />
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
@@ -44,7 +44,7 @@ files = {
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-dark mb-5">IBYOS Design & Architecture crafts premium homes, workplaces and bespoke interiors from Batam for clients across Indonesia and Singapore. Our work is quiet, considered and built around serene spatial harmony.</p>
+                        <p class="text-dark mb-5">IBYOS Design & Architecture crafts premium homes, workplaces and bespoke interiors from Batam for clients across Batam and Indonesia. Our work is quiet, considered and built around serene spatial harmony.</p>
                         <a class="btn btn-primary btn-xl me-3" href="portfolio.html">View Projects</a>
                         <a class="btn btn-outline-primary btn-xl" href="contact.html">Start a Conversation</a>
                     </div>
@@ -130,7 +130,7 @@ files = {
         </section>
         <section class="page-section bg-dark text-white text-center">
             <div class="container px-4 px-lg-5">
-                <h2 class="mb-4">Looking for a studio in Batam or Singapore?</h2>
+                <h2 class="mb-4">Looking for a studio in Batam?</h2>
                 <p class="mb-4">We deliver architecture and interior direction with a premium editorial aesthetic, grounded in site intelligence and Indonesian materials.</p>
                 <a class="btn btn-light btn-xl" href="contact.html">Book a Consultation</a>
             </div>
@@ -202,7 +202,7 @@ files = {
                     </div>
                     <div class="col-lg-6">
                         <p class="mb-4">Our design practice blends spatial clarity, natural materials and contextual intelligence. Each project begins with a rigorous brief, then evolves through careful planning, material direction and refined spatial sequences.</p>
-                        <p>Located in Batam, we serve clients in Indonesia and Singapore with architecture consultancy, concept design, interior architecture and construction guidance.</p>
+                        <p>Located in Batam, we serve clients across Indonesia with architecture consultancy, concept design, interior architecture and construction guidance.</p>
                     </div>
                 </div>
             </div>
@@ -280,7 +280,7 @@ files = {
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="IBYOS Design & Architecture provides architecture services in Batam, Jakarta and Singapore for residential homes, villas, showrooms and interiors." />
+        <meta name="description" content="IBYOS Design & Architecture provides architecture services in Batam and Jakarta for residential homes, villas, showrooms and interiors." />
         <meta name="author" content="IBYOS Design & Architecture" />
         <title>Services | IBYOS Design & Architecture</title>
         <meta property="og:title" content="Services | IBYOS Design & Architecture" />
@@ -317,7 +317,7 @@ files = {
                         <hr class="divider" />
                     </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-muted mb-5">From bespoke home architecture to commercial showroom design and interior architecture, we support clients in Batam, Jakarta and Singapore with a thoughtful, high-end design practice.</p>
+                        <p class="text-muted mb-5">From bespoke home architecture to commercial showroom design and interior architecture, we support clients in Batam and Jakarta with a thoughtful, high-end design practice.</p>
                         <a class="btn btn-primary btn-xl me-3" href="portfolio.html">View Portfolio</a>
                         <a class="btn btn-outline-primary btn-xl" href="contact.html">Book Consultation</a>
                     </div>
@@ -435,7 +435,7 @@ files = {
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Contact IBYOS Design & Architecture, a Batam architecture firm offering residential, commercial and interior design services across Indonesia and Singapore." />
+        <meta name="description" content="Contact IBYOS Design & Architecture, a Batam architecture firm offering residential, commercial and interior design services across Indonesia." />
         <meta name="author" content="IBYOS Design & Architecture" />
         <title>Contact | IBYOS Design & Architecture</title>
         <meta property="og:title" content="Contact | IBYOS Design & Architecture" />
@@ -483,12 +483,12 @@ files = {
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-lg-6">
                         <h2 class="mt-0">Batam-based architecture with local insight.</h2>
-                        <p class="text-muted">IBYOS Design & Architecture works with clients across Batam, Jakarta and Singapore. We deliver architecture and interior direction rooted in Indonesian context and modern luxury.</p>
+                        <p class="text-muted">IBYOS Design & Architecture works with clients across Batam and Jakarta. We deliver architecture and interior direction rooted in Indonesian context and modern luxury.</p>
                         <ul class="contact-list text-muted">
                             <li><strong>Phone:</strong> +62 815-0000-0000</li>
                             <li><strong>Email:</strong> <a href="mailto:hello@ibyosdesign.com">hello@ibyosdesign.com</a></li>
                             <li><strong>Location:</strong> Batam, Indonesia</li>
-                            <li><strong>Service area:</strong> Batam, Jakarta, Singapore</li>
+                            <li><strong>Service area:</strong> Batam, Jakarta</li>
                         </ul>
                     </div>
                     <div class="col-lg-6 mt-4 mt-lg-0">

@@ -1,14 +1,8 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Creative v7.0.7 (https://startbootstrap.com/theme/creative)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+/*
+ * IBYOS Design & Architecture — Custom Theme
+ * Premium cinematic luxury stylesheet (customized)
+ * Author: IBYOS Design & Architecture
  */
 :root {
   --bs-blue: #0d6efd;
@@ -11999,4 +11993,16 @@ hr.divider {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* JavaScript-triggered reveal state */
+.reveal-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  animation: fadeInUp 0.95s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
 }
