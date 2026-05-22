@@ -12087,7 +12087,7 @@ hr.divider {
     background: rgba(24,20,16,0.84) !important;
 
     backdrop-filter: blur(16px);
-    overflow: visible;
+    overflow: hidden;
 
     border-bottom: 1px solid rgba(255,255,255,0.05);
   }
@@ -12109,7 +12109,7 @@ hr.divider {
   top: -10px;
   left: -14px;
 
-  width: 125px;
+  width: 92px;
   height: 82px;
 
   background: rgba(248,244,238,0.98);
