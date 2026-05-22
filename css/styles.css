@@ -12071,21 +12071,54 @@ hr.divider {
     padding-bottom: 0.8rem;
     backdrop-filter: blur(14px);
     background: rgba(22, 18, 16, 0.82);
+    overflow: visible;
   }
 
   /* REMOVE DESKTOP LOGO SHAPE */
   #mainNav .navbar-brand::before {
-    display: none;
+  content: "";
+  position: absolute;
+
+  top: -14px;
+  bottom: -14px;
+  left: -32px;
+
+  width: 300px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(248,244,238,0.96) 0%,
+      rgba(244,238,232,0.94) 72%,
+      rgba(244,238,232,0.0) 100%
+    );
+
+  clip-path: polygon(
+    0 0,
+    82% 0,
+    100% 100%,
+    0% 100%
+  );
+
+  box-shadow:
+    0 8px 22px rgba(0,0,0,0.10);
+
+  z-index: -1;
+}
   }
 
   /* MOBILE LOGO */
   #mainNav .navbar-brand {
-    padding: 0;
-    margin-left: 0.2rem;
+  padding: 0;
+  margin-left: 0.2rem;
+
+  position: relative;
+  z-index: 2;
+  overflow: visible;
   }
 
   #mainNav .navbar-brand img {
-    width: 90px;
+    width: 74px;
     height: auto;
   }
 
