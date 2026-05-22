@@ -12116,14 +12116,9 @@ hr.divider {
     bottom: -14px;
     left: -60px;
 
-    width: 380px;
-
-    background: linear-gradient(
-      90deg,
-      rgba(248,244,238,0.98) 0%,
-      rgba(244,238,232,0.96) 72%,
-      rgba(244,238,232,0.15) 100%
-    );
+    width: 115px;
+    height: 92px;
+    background: rgba(248,244,238,0.98);
 
     box-shadow:
       0 8px 22px rgba(0,0,0,0.10);
