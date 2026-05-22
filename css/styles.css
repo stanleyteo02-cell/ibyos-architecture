@@ -12102,23 +12102,26 @@ hr.divider {
     overflow: visible;
   }
 
-  #mainNav .navbar-brand::before {
-    content: "";
-    position: absolute;
+ #mainNav .navbar-brand::before {
+  content: "";
+  position: absolute;
 
-    top: -14px;
-    bottom: -14px;
-    left: -18px;
+  top: -10px;
+  left: -14px;
 
-    width: 150px;
-    background: rgba(248,244,238,0.98);
+  width: 125px;
+  height: 82px;
 
-    box-shadow:
-      0 8px 22px rgba(0,0,0,0.10);
+  background: rgba(248,244,238,0.98);
 
-    z-index: 0;
-    pointer-events: none;
-  }
+  border-radius: 0px;
+
+  box-shadow:
+    0 8px 22px rgba(0,0,0,0.10);
+
+  z-index: -1;
+  pointer-events: none;
+}
 
   #mainNav .navbar-brand img {
     width: 64px;
