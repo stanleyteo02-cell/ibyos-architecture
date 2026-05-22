@@ -12067,45 +12067,26 @@ hr.divider {
 
   /* MOBILE NAVBAR */
   #mainNav {
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    backdrop-filter: blur(14px);
-    background: rgba(22, 18, 16, 0.82);
-    overflow: visible;
-  }
-
-  /* REMOVE DESKTOP LOGO SHAPE */
-  #mainNav .navbar-brand::before {
-  content: "";
-  position: absolute;
-
-  top: -14px;
-  bottom: -14px;
-  left: -32px;
-
-  width: 300px;
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
 
   background:
     linear-gradient(
       90deg,
       rgba(248,244,238,0.96) 0%,
-      rgba(244,238,232,0.94) 72%,
-      rgba(244,238,232,0.0) 100%
+      rgba(244,238,232,0.94) 30%,
+      rgba(22,18,16,0.78) 30%,
+      rgba(22,18,16,0.82) 100%
     );
 
-  clip-path: polygon(
-    0 0,
-    82% 0,
-    100% 100%,
-    0% 100%
-  );
+  backdrop-filter: blur(14px);
 
-  box-shadow:
-    0 8px 22px rgba(0,0,0,0.10);
-
-  z-index: -1;
+  overflow: visible;
 }
   }
+
+  /* REMOVE DESKTOP LOGO SHAPE */
+ 
 
   /* MOBILE LOGO */
   #mainNav .navbar-brand {
@@ -12114,7 +12095,6 @@ hr.divider {
 
   position: relative;
   z-index: 2;
-  overflow: visible;
   }
 
   #mainNav .navbar-brand img {
@@ -12167,4 +12147,3 @@ hr.divider {
     margin: auto;
   }
 
-}
