@@ -12108,14 +12108,12 @@ hr.divider {
   position: absolute;
 
   top: -10px;
-  left: -14px;
+  left: -10px;
 
-  width: 92px;
+  width: 96px;
   height: 82px;
 
   background: rgba(248,244,238,0.98);
-
-  border-radius: 0px;
 
   box-shadow:
     0 8px 22px rgba(0,0,0,0.10);
