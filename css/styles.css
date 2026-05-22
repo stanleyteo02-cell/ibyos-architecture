@@ -10902,13 +10902,6 @@ hr.divider-light {
 
     background: rgba(238, 232, 224, 0.94);
 
-    clip-path: polygon(
-        0 0,
-        86% 0,
-        100% 100%,
-        0% 100%
-    );
-
     box-shadow:
         0 8px 24px rgba(0,0,0,0.08);
 
