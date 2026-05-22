@@ -12084,13 +12084,7 @@ hr.divider {
     padding-top: 0.55rem;
     padding-bottom: 0.55rem;
 
-    background: linear-gradient(
-      90deg,
-      rgba(248,244,238,0.98) 0%,
-      rgba(244,238,232,0.96) 34%,
-      rgba(24,20,16,0.82) 34%,
-      rgba(24,20,16,0.84) 100%
-    ) !important;
+    background: rgba(24,20,16,0.84) !important;
 
     backdrop-filter: blur(16px);
     overflow: visible;
