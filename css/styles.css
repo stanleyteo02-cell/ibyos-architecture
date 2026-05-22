@@ -12126,13 +12126,6 @@ hr.divider {
       rgba(244,238,232,0.15) 100%
     );
 
-    clip-path: polygon(
-      0 0,
-      78% 0,
-      100% 100%,
-      0 100%
-    );
-
     box-shadow:
       0 8px 22px rgba(0,0,0,0.10);
 
