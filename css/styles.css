@@ -12063,21 +12063,20 @@ hr.divider {
   opacity: 0;
   transform: translateY(20px);
 }
-@media (max-width: 991px) {
+@media (max-width: 991px) {}
 
   /* MOBILE NAVBAR */
   #mainNav {
   padding-top: 0.55rem;
   padding-bottom: 0.55rem;
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(248,244,238,0.98) 0%,
-      rgba(244,238,232,0.96) 34%,
-      rgba(24,20,16,0.82) 34%,
-      rgba(24,20,16,0.84) 100%
-    ) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(248,244,238,0.98) 0%,
+    rgba(244,238,232,0.96) 34%,
+    rgba(24,20,16,0.82) 34%,
+    rgba(24,20,16,0.84) 100%
+  ) !important;
 
   backdrop-filter: blur(16px);
 
@@ -12086,37 +12085,6 @@ hr.divider {
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
-  /* REMOVE DESKTOP LOGO SHAPE */
-  #mainNav .navbar-brand::before {
-  content: "";
-  position: absolute;
-
-  top: -14px;
-  bottom: -14px;
-  left: -32px;
-
-  width: 300px;
-
-  background:
-    linear-gradient(
-      90deg,
-      rgba(248,244,238,0.96) 0%,
-      rgba(244,238,232,0.94) 72%,
-      rgba(244,238,232,0.0) 100%
-    );
-
-  clip-path: polygon(
-    0 0,
-    82% 0,
-    100% 100%,
-    0% 100%
-  );
-
-  box-shadow:
-    0 8px 22px rgba(0,0,0,0.10);
-
-  z-index: -1;
-}
  
 
   /* MOBILE LOGO */
