@@ -10860,14 +10860,11 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.45rem 1.1rem rgba(0, 0, 0, 0.16);
-  background:
-  linear-gradient(
-    90deg,
-    rgba(248,244,238,1) 0%,
-    rgba(248,244,238,1) 34%,
-    rgba(24,20,16,0.82) 34%,
-    rgba(24,20,16,0.84) 100%
-  );
+  background: rgba(24,20,16,0.28);
+  overflow: hidden;
+ 
+
+
   transition:
     background-color 0.35s ease,
     box-shadow 0.35s ease,
@@ -10898,20 +10895,19 @@ hr.divider-light {
     bottom: -18px;
     left: -170px;
 
-    width: 150px;
+    width: 500px; /* REDUCED */
 
-   background: rgba(248,244,238,0.98);
+    background: rgba(238, 232, 224, 0.94);
 
-    box-shadow:
-        0 8px 24px rgba(0,0,0,0.08);
+    clip-path: polygon(
+        0 0,
+        82% 0,
+        100% 100%,
+        0 100%
+    );
 
-    border-top: 1px solid rgba(255,255,255,0.55);
-    border-bottom: 1px solid rgba(255,255,255,0.25);
-
-    backdrop-filter: blur(10px);
-
-    z-index: -1;
     pointer-events: none;
+    z-index: -1;
 }
 #mainNav .navbar-brand img {
   width: 42px;
@@ -10919,7 +10915,7 @@ hr.divider-light {
   filter: contrast(1.08) brightness(1.08) saturate(1.05);
 }
 #mainNav .navbar-brand span {
-  color: rgba(255, 255, 255, 0.96);
+  color: rgba(30,24,20,0.92);
   letter-spacing: 0.06em;
   font-size: 0.98rem;
 }
@@ -10932,11 +10928,11 @@ hr.divider-light {
   padding: 0.6rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover,
-#mainNav .navbar-nav .nav-item .nav-link:active {
-  color: rgba(255, 255, 255, 1);
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: rgba(255,255,255,0.88);
 }
-#mainNav .navbar-nav .nav-item .nav-link.active {
-  color: rgba(255, 255, 255, 0.98) !important;
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: rgba(255,255,255,0.92);
 }
 #mainNav .navbar-toggler-icon {
   filter: invert(1) brightness(1.1);
@@ -10962,29 +10958,24 @@ hr.divider-light {
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
   }
-   #mainNav.navbar-shrink {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(248,244,238,1) 0%,
-      rgba(248,244,238,1) 34%,
-      rgba(24,20,16,0.82) 34%,
-      rgba(24,20,16,0.84) 100%
-    ) !important;
-
+  #mainNav.navbar-shrink {
+  background: rgba(24,20,16,0.84) !important;
   backdrop-filter: blur(16px);
   }
+  #mainNav.navbar-shrink .navbar-brand::before {
+  width: 500px;
+}
   #mainNav.navbar-shrink .navbar-brand {
     color: rgba(255, 255, 255, 0.96);
   }
   #mainNav.navbar-shrink .navbar-brand:hover {
     color: rgba(255, 255, 255, 0.96);
   }
-  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
-    color: rgba(255, 255, 255, 0.88);
+ #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+    color: rgba(255,255,255,0.92) !important;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255,255,255,1) !important;
   }
 }
 
@@ -12110,7 +12101,7 @@ hr.divider {
   top: -10px;
   left: -10px;
 
-  width: 96px;
+  width: 160px;
   height: 82px;
 
   background: rgba(248,244,238,0.98);
@@ -12123,8 +12114,11 @@ hr.divider {
 }
 
   #mainNav .navbar-brand img {
-    width: 64px;
-    height: auto;
+  width: 64px;
+  height: auto;
+
+  position: relative;
+  z-index: 3;
   }
 
   /* HAMBURGER BUTTON */
@@ -12171,5 +12165,51 @@ hr.divider {
     max-width: 85%;
     margin: auto;
   }
+  @media (min-width: 992px) {
 
+  /* DESKTOP NAVBAR */
+  #mainNav {
+    background: rgba(24,20,16,0.28) !important;
+    backdrop-filter: blur(10px);
+    overflow: visible;
+  }
+
+  /* DESKTOP LOGO SHAPE */
+  #mainNav .navbar-brand::before {
+    content: "";
+    position: absolute;
+
+    top: -14px;
+    bottom: -14px;
+    left: -32px;
+
+    width: 300px;
+
+    background: linear-gradient(
+      90deg,
+      rgba(248,244,238,0.96) 0%,
+      rgba(244,238,232,0.94) 72%,
+      rgba(244,238,232,0.0) 100%
+    );
+
+    clip-path: polygon(
+      0 0,
+      82% 0,
+      100% 100%,
+      0 100%
+    );
+
+    box-shadow:
+      0 8px 22px rgba(0,0,0,0.10);
+
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  /* DESKTOP NAV TEXT */
+  #mainNav .nav-link {
+    color: rgba(255,255,255,0.92) !important;
+  }
+
+}
 }
